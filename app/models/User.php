@@ -1,5 +1,5 @@
 <?php
-	class Post {
+	class User {
 		private $db;
 
 		public function __construct() {
@@ -8,7 +8,7 @@
 
 		public function getPosts() {
 
-			$this->db->query("SELECT * FROM posts");
+			$this->db->query("SELECT * FROM users");
 			return $this->db->resultSet();
 		}
 	}
